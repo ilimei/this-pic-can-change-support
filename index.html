@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="这图能改：六项图片和视频本机处理工具，以及可选的自有 AI 服务生图与改图。">
+  <meta name="theme-color" content="#f7f5ef">
+  <title>这图能改｜图片与视频工具</title>
+  <style>
+    :root{color-scheme:light;--ink:#20231f;--muted:#62685f;--line:#e5e3da;--paper:#fff;--wash:#f7f5ef;--green:#28765d;--green-wash:#eaf3ee}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--wash);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:var(--green);text-underline-offset:3px}
+    .shell{width:min(100% - 32px,880px);margin:0 auto}
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0}
+    .brand{display:flex;align-items:center;gap:12px;color:var(--ink);font-weight:700;text-decoration:none}
+    .brand img{width:46px;height:46px;border-radius:13px}
+    nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}
+    nav a{color:var(--muted)}
+    main{padding:22px 0 52px}
+    .hero,.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:clamp(22px,5vw,42px)}
+    .hero{background:linear-gradient(145deg,#fff 10%,#eff6f1 100%)}
+    .eyebrow{color:var(--green);font-size:13px;font-weight:700;letter-spacing:.06em}
+    h1{font-size:clamp(32px,7vw,52px);line-height:1.18;letter-spacing:-.035em;margin:9px 0 14px}
+    h2{font-size:22px;line-height:1.35;margin:0 0 16px}
+    p{margin:0 0 14px}
+    .lead{max-width:650px;font-size:18px;color:#454b44}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .button{display:inline-block;padding:10px 16px;border-radius:12px;background:var(--green);color:#fff;text-decoration:none;font-weight:650}
+    .button.secondary{background:#fff;color:var(--green);border:1px solid var(--line)}
+    .stack{display:grid;gap:16px;margin-top:16px}
+    .tools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:0;margin:0;list-style:none}
+    .tools li{padding:12px 14px;border:1px solid var(--line);border-radius:13px;background:#fff}
+    .callout{padding:15px 17px;border-radius:14px;background:var(--green-wash);color:#244d3f}
+    .muted{color:var(--muted);font-size:14px}
+    footer{border-top:1px solid var(--line);padding:20px 0 32px;color:var(--muted);font-size:14px}
+    footer a{margin-right:16px}
+    @media(max-width:620px){header{align-items:flex-start;flex-direction:column;gap:12px}.tools{grid-template-columns:1fr 1fr}.hero,.card{border-radius:17px}main{padding-top:10px}}
+    @media(max-width:380px){.tools{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <a class="brand" href="./index.html"><img src="./assets/app-icon.png" alt="这图能改图标"><span>这图能改</span></a>
+      <nav aria-label="主要导航"><a href="./privacy.html">隐私说明</a><a href="./support.html">使用支持</a></nav>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="eyebrow">图片与视频处理</div>
+        <h1 id="page-title">常用影像工具，<br>在设备上轻松完成。</h1>
+        <p class="lead">“这图能改”提供六项本机图片与视频工具，也提供可选的 AI 生图和改图功能。使用 AI 时，你可以配置自己的服务商与 API Key。</p>
+        <div class="actions"><a class="button" href="./support.html">查看使用支持</a><a class="button secondary" href="./privacy.html">了解隐私与数据去向</a></div>
+      </section>
+      <div class="stack">
+        <section class="card" aria-labelledby="tools-title">
+          <h2 id="tools-title">六项本机工具</h2>
+          <ul class="tools">
+            <li>视频转实况</li><li>视频压缩</li><li>视频转 GIF</li>
+            <li>图片压缩</li><li>格式转换</li><li>调整尺寸</li>
+          </ul>
+          <p class="muted" style="margin-top:14px">普通影像处理在设备上完成。素材不会因为使用这些本机工具而上传到 App 开发者服务器。</p>
+        </section>
+        <section class="card" aria-labelledby="plan-title">
+          <h2 id="plan-title">免费额度与永久版</h2>
+          <p>六项本机工具每周有 20 次免费成功处理额度，每周一 00:00 按设备本地时间重置。一次性永久版购买可不限次数使用这六项工具。</p>
+          <p class="muted">永久版不含 AI 额度，也不承担 AI 服务商可能收取的费用；购买价格以 App 内显示为准。</p>
+        </section>
+        <section class="card" aria-labelledby="ai-title">
+          <h2 id="ai-title">可选 AI：使用你自己的服务</h2>
+          <p>AI 请求由设备直接发送到你配置的服务地址，不经过 App 开发者服务器。AI 不扣本 App 的每周免费处理次数，服务商可能按其账号和价格规则另行计费。</p>
+          <p class="callout">不同服务商或自定义地址的数据政策可能不同。请先查看实际服务方的条款；我们无法保证其不收集、不留存或不将提交内容用于模型改进。</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <a href="./privacy.html">隐私说明</a><a href="./support.html">使用支持</a><a href="mailto:hugehardzhang@gmail.com">联系客服</a>
+      <div>客服邮箱：hugehardzhang@gmail.com · 更新日期：2026年10月12日</div>
+    </footer>
+  </div>
+</body>
+</html>
